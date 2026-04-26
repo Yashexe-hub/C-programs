@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+struct hello
+{
+    float f; //4
+    int arr[3];//12
+}hobj;//16
+
+int main()
+{
+    printf(" size of object is %lu\n", sizeof(hobj));
+    return 0;   
+}

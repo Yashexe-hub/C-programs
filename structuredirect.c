@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+// Declaration
+#pragma pack(1)
+    struct Demo
+    {
+        
+        int i;   //4 bytes
+        char ch;
+        float f; //4 bytes
+    };           //8 bytes
+
+int main()
+{
+    struct Demo dobj;
+    dobj.i = 11;
+    dobj.ch = 'A';
+    dobj.f = 10.0f;
+
+    printf("%d\n", dobj.i); //11
+    printf("%c\n", dobj.ch); //A
+    printf("%f\n", dobj.f); //10.0
+    
+
+}
